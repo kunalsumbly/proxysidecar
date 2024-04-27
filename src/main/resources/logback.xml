@@ -3,12 +3,8 @@
 
 
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
-
-<!--            <Pattern>-->
-<!--                %d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %replace(%replace(%replace(%replace(%replace(%replace(%replace(%replace(%replace(%replace(%replace(%replace(%replace(%replace(%replace(%replace(%replace(%replace(%replace(%replace(%msg){'(email\s*[:=]\s*)(.*)','$1****'}){'(firstName\s*[:=]\s*)(.*)','$1****'}){'("firstName"\s*:\s*")[^"]+(")','$1****$2'}){'(&lt;firstName&gt;)[^&lt;]*(&lt;/firstName&gt;)', '$1****$2'}){'(lastName\s*[:=]\s*)(.*)','$1****'}){'("lastName"\s*:\s*")[^"]+(")','$1****$2'}){'(&lt;lastName&gt;)[^&lt;]*(&lt;/lastName&gt;)', '$1****$2'}){'("cardNumberX8"\s*:\s*")[^"]+(")','$1****$2'}){'("creditCardToken"\s*:\s*")[^"]+(")','$1****$2'}){'("dateOfBirth"\s*:\s*)(-?\d+)','$1****'}){'("dateOfBirthX8"\s*:\s*")[^"]+(")','$1****$2'}){'("contactAddress"\s*:\s*")[^"]+(")','$1****$2'}){'("indentValue"\s*:\s*")[^"]+(")','$1****$2'}){'("dateOfBirth"\s*:\s*")[^"]+(")','$1****$2'}){'("formattedAddressX9"\s*:\s*")[^"]+(")','$1****$2'}){'("newFormattedAddressX9"\s*:\s*")[^"]+(")','$1****$2'}){'("email"\s*:\s*")[^"]+(")','$1****$2'}){'("contactEmail"\s*:\s*")[^"]+(")','$1****$2'}){'("contactPhone"\s*:\s*")[^"]+(")','$1****$2'}){'("phone"\s*:\s*")[^"]+(")','$1****$2'}%n-->
-<!--            </Pattern>-->
             <encoder>
-                <pattern>%date{dd-MMM-yyyy HH:mm:ss.SSS} [%X{_X_MOA_MSISDN_}] [%thread] %-5level %logger{36} - %msg%n</pattern>
+                <pattern>%date{dd-MMM-yyyy HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
             </encoder>
 
     </appender>
@@ -25,7 +21,7 @@
         </rollingPolicy>
 
         <encoder>
-            <pattern>%date{dd-MMM-yyyy HH:mm:ss.SSS} [%X{_X_MOA_MSISDN_}] [%thread] %-5level %logger{36} - %msg%n</pattern>
+            <pattern>%date{dd-MMM-yyyy HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
         </encoder>
     </appender>
 
